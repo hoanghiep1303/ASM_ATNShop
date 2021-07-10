@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+{{>head title=this.title subpage='Page X' }}
+
+<body id="paymentbody">
+    {{>header  title=this.title}}
+
+    <main>
+        <center><H1>{{title}}</H1></center>
+<div id="pr" class="row">
+  <div id="pc75" class="col-75">
+    <div id="pctn" class="container">
+      <form action="/action_page.php">
+      
+        <div id="pr" class="row">
+          <div id="pc50" class="col-50">
+            <h3>Billing Address</h3>
+            <label id="plabel" for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="pinput" name="firstname" placeholder="John M. Doe">
+            <label id="plabel" for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="pinput" name="email" placeholder="john@example.com">
+            <label id="plabel" for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="pinput" name="address" placeholder="542 W. 15th Street">
+            <label id="plabel" for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="pinput" name="city" placeholder="New York">
+
+            <div id="pr" class="row">
+              <div id="pc50" class="col-50">
+                <label id="plabel" for="state">State</label>
+                <input type="text" id="pinput" name="state" placeholder="NY">
+              </div>
+              <div id="pc50" class="col-50">
+                <label id="plabel" for="zip">Zip</label>
+                <input type="text" id="pinput" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div id="pc50" class="col-50">
+            <h3>Payment</h3>
+            <label id="plabel" for="fname">Accepted Cards</label>
+            <div id="pictn" class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label id="plabel" for="cname">Name on Card</label>
+            <input type="text" id="pinput" name="cardname" placeholder="John More Doe">
+            <label id="plabel" for="ccnum">Credit card number</label>
+            <input type="text" id="pinput" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label id="plabel" for="expmonth">Exp Month</label>
+            <input type="text" id="pinput" name="expmonth" placeholder="September">
+            <div id="pr" class="row">
+              <div id="pc50" class="col-50">
+                <label id="plabel" for="expyear">Exp Year</label>
+                <input type="text" id="pinput" name="expyear" placeholder="2018">
+              </div>
+              <div id="pc50" class="col-50">
+                <label id="plabel" for="cvv">CVV</label>
+                <input type="text" id="pinput" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label id="plabel">
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label id="plabel">
+        <input id="pb" type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  <div id="pc25" class="col-25">
+    <div id="pctn" class="container">
+      <h4>Cart <span id="psp" class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <p><a id="pa" href="#">Product 1</a> <span class="price">150.000 VND</span></p>
+      <p><a id="pa" href="#">Product 2</a> <span class="price">50.000 VND</span></p>
+      <p><a id="pa" href="#">Product 3</a> <span class="price">80.000 VND</span></p>
+      <p><a id="pa" href="#">Product 4</a> <span class="price">20.000 VND</span></p>
+      <hr id="phr">
+      <p>Total <span id="psp" class="price" style="color:black"><b>300.000 VND</b></span></p>
+    </div>
+  </div>
+</div>
+</main>
+    {{>footer}}
+</body>
+
+</html>

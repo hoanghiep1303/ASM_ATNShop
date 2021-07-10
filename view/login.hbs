@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+{{>head title=this.title subpage='Page X' }}
+
+<body id="login">
+
+{{>header  title=this.title}}
+<center> <h1>{{title}}</h1> </center>   
+    <form id="lg">  
+        <div id="loginform" class="container">   
+            <label>Username : </label>   
+            <input id="lgip" type="text" placeholder="Enter Username" name="username" required>  
+            <label>Password : </label>   
+            <input id="lgip" type="password" placeholder="Enter Password" name="password" required>  
+            <button id="lgbtn" type="submit">Login</button>   
+            <input type="checkbox" checked="checked"> Remember me   
+            <button id="lgcancelbtn" type="button" class="cancelbtn"> Cancel</button>   
+            Forgot <a href="#"> password? </a>   
+        </div>   
+    </form>
+    {{>footer}}
+</body>
+
+</html>
