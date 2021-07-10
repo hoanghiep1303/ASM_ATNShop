@@ -1,0 +1,52 @@
+B0. Tạo Project, cài Thư viện
+	npm init --y
+	npm install --save express
+	
+	
+	*** sử dụng các Middleware
+	1. Application middleware
+	2. Router middleware
+	3. Error-handling middleware
+	4. Built-in middleware
+	5. Third-party middleware
+	
+	*** Cài thêm thư viện 
+	npm i --S body-parser
+	npm i --S express-session
+	
+	*** Sử dụng 
+	- Express
+		const express = ​require​(​'express'​);
+	- Router
+		const​ router = express.Router();
+		app.use(​'/'​, router);
+	- Body-Parser
+		const​ bodyParser = ​require​(​'body-parser'​);
+		app.use(bodyParser.json())
+	- Session
+		app.use(session({secret: ​'some secrets'​}));
+	
+B1. Project
+    1. File / Project Nodejs :  02.03.01_index.js
+    2. File config của project:  package.json
+    3. File config Heroku - running Web:  Procfile
+
+    
+B2. Github
+    - Tạo Repository <A>
+    - Upload 3 files - Project (B1)
+
+B3. cấu hình Heroku 
+    - Tạo Web App - <A Hereku>
+    - Kết nối vào tài khoản GitHub 
+    - Cấu hình tới Repositories <A>
+        Search
+        Connect
+    - Deploy Project (B1) - <A>
+        Deploy Branch
+    - View kết quả
+
+*** UPdate
+    - sửa code
+    - upload lại lên Github - Repository
+    - vô Web App - Heroku : Deploy lại, view
